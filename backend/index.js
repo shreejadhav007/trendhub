@@ -73,7 +73,7 @@ app.post('/addtowishlist/:id',async(req,res)=>{
     const data  = await url.json();
     let wishlistadd  = await wishlists.create(data).catch((e)=> console.log(e))
     
-    // console.log(id)
+    console.log(data)
 })
 
 app.get('/wishlistitems',async(req,res)=>{
