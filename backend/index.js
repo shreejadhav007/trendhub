@@ -34,7 +34,7 @@ app.post('/addtocart/:id',async(req,res)=>{
     const data  = await url.json();
     let cartadd  = await cart.create(data).catch((e)=> console.log(e))
     
-    // console.log(cartadd)
+    console.log(cartadd)
 })
 
 app.get('/cartitems',async(req,res)=>{
